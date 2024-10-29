@@ -6,7 +6,7 @@ TEST(TypeWiseAlertTestSuite, InfersBreachBelowLowerLimits) {
     BatteryCharacter batteryChar = { PASSIVE_COOLING, "Test" };
     checkAndAlert(TO_CONTROLLER, batteryChar, -10.0); // Temperature below 0°C
 }
-
+ 
 // Test case: when temperature is above upper limit
 TEST(TypeWiseAlertTestSuite, InfersBreachAboveUpperLimits) {
     BatteryCharacter batteryChar = { PASSIVE_COOLING, "Test" };
